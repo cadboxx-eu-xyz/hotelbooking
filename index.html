@@ -1,0 +1,662 @@
+ <!doctype html>
+ <html lang="en">
+   <head>
+     <title>Hotel</title>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+     <!-- Bootstrap CSS -->
+     
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link href="style.css" rel="stylesheet" type="text/css">
+     <script src="java.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+   <body class="background">
+    
+     <!-- navbar -->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+            <a class="navbar-brand text-bold bg-brand" href="#">Paradise</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                 
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu   text-white" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item " href="#">Action</a>
+                    <a class="dropdown-item  " href="#">Another action</a>
+                    <a class="dropdown-item  " href="#">Something else here</a>
+                  </div>
+                </li>
+                
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+    </div>
+    <!-- top background -->
+   
+    <!--https://images2.alphacoders.com/517/thumb-1920-517458.jpg  -->
+    <div>
+       <img class="bgImage" src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+        alt="Notebook" />
+       <div class="content"> 
+       <div class="container">
+       <h1 class="welocomeHead">Welcome to Paradise</h1>
+       <p><span id="dots"></span> <span id="more" > Hotel is an American reality television program. In the show,
+          a group of singles live in a luxurious hotel resort, competing to see who
+           can stay in the hotel the longest. Each week, the contestants pair off into
+            couples, and must share a hotel room together. One person is left over, and
+             he or she must either pair up in the following episode, or leave the hotel
+              to be replaced by a new contestant. The format was created by Mentorn, a
+               British production company, which has produced various versions of the show 
+               around the world.</span></p>
+        <button class="square_btn" type="button" id="read" onclick="read()">Read More </button>
+        <script type="text/javascript">
+               var i=0;
+                   function read(){
+                         if(!i){
+        
+                          document.getElementById("more").style
+                                    .display="inline";
+                                document.getElementById("dots").style
+                                    .display="none";
+                                document.getElementById("read").
+                                     innerHTML="Read Less";
+                                     i=1;
+                         }
+      
+                              else{
+                                document.getElementById("more").style
+                                    .display="none";
+                                document.getElementById("dots").style
+                                    .display="inline";
+                                document.getElementById("read").
+                                     innerHTML="Read more";
+                                 i=0;
+                                      }
+                                    }
+          
+        </script> 
+   </div>
+   </div>
+
+  </div>
+   <!-- input division -->
+<div class="bookingDiv">
+           <h1 class="text-white  font-weight-bold">Find hotels and home at best prices</h1>
+     </div>
+
+  <div class="bookingDiv justify-content-center">
+     <div class="input-group justify-content-center">
+       <input style="height: 60px; border-radius: 9px;  border-color: #848286a8;" type="location" placeholder="Location"/>
+       <input style="height: 60px; border-radius: 9px;  border-color: #848286a8;" type="date"  aria-level="check-in"/>
+       <input style="height: 60px; border-radius: 9px;  border-color: #848286a8;" type="date" placeholder="Check-out"/>
+       <input style="height: 60px;" class="btn btn-success" type="submit" value="search"/>
+      </div>
+  
+  </div>
+
+ 
+  
+ 
+
+
+   <div class="p-0 m-0">
+    <h1 class="roomtext text-white">Room</h1>
+    </div>
+
+</div>
+     
+  <div class="roomsContainer">
+    <div class=" container">
+     <div class="row"> 
+       <div class="col-lg-4 col-md-8">
+          <div class="card  ">
+             <div class="card-body">
+               <img class="roomimage"  src="https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
+                   <div class="card-bottom">
+                    <h3> Hotel paradise 69758 </h3>
+                    <p> Near Disha School, Nirman Nagar 102, Jaipur</p>
+                    <div class="d-flex flex-row justify-content-center">
+                      <div class="p-2">
+                        <a href="#">
+                           <i class="fa fa-car" aria-hidden="true">parking</i>
+                        </a> 
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <i class="fa fa-check-circle-o" aria-hidden="true">reception</i>
+                      </a>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">
+                        <i class="fa fa-wifi" aria-hidden="true">free wi-fi</i>
+                      </a>
+                    </div>
+                    </div>
+
+                    <!-- card bottom -->
+                    <div class="d-flex flex-row justify-content-center ">
+                      <div class="p-4">
+                         <i class="fa fa-inr  text-danger" aria-hidden="true"><h4 class="text-danger">799</h4></i>
+                         
+                      </div>
+                        <div class="p-4 pl-2">
+                          <i class="fa fa-inr" aria-hidden="true"><h4><del>999</del></h4></i>
+                        </div>
+                        <div class="p-4 pl-2">
+                          <h4 class="text-warning block">20%Off</h4>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row justify-content-center">
+                         <div class="p-2">
+                          <a class="square_btn1">View Details </a>
+                         </div>
+                         <div class="p-2">
+                          <a class="square_btn2"> Book Now</a>
+                         </div>
+                      </div>
+
+                 </div>
+              </div>
+          </div>
+       </div>
+
+       <div class="col-lg-4 col-md-8">
+        <div class="card ">
+           <div class="card-body">
+            <img class="roomimage" src=" https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
+               
+            <div class="card-bottom">
+              <h3> Hotel paradise 37375 </h3>
+              <p>Near Panchayati Dharamshal, Banipark ,Jaipur</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-2">
+                  <a href="#">
+                     <i class="fa fa-car" aria-hidden="true">parking</i>
+                  </a> 
+              </div>
+              <div class="p-2">
+                <a href="#">
+                  <i class="fa fa-check-circle-o" aria-hidden="true">reception</i>
+                </a>
+              </div>
+              <div class="p-2">
+                <a href="#">
+                  <i class="fa fa-wifi" aria-hidden="true">free wi-fi</i>
+                </a>
+              </div>
+              </div>
+           </div>
+        
+                <!--card bottom  -->
+           <div class="d-flex flex-row justify-content-center ">
+            <div class="p-4">
+               <i class="fa fa-inr  text-danger" aria-hidden="true"><h4 class="text-danger">1000</h4></i>
+               
+            </div>
+              <div class="p-4 pl-2">
+                <i class="fa fa-inr" aria-hidden="true"><h4><del>1500</del></h4></i>
+              </div>
+              <div class="p-4 pl-2">
+                <h4 class="text-warning block">33%Off</h4>
+              </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+               <div class="p-2">
+                <a class="square_btn1">View Details </a>
+               </div>
+               <div class="p-2">
+                <a class="square_btn2"> Book Now</a>
+               </div>
+            </div>
+
+             
+            </div>
+        </div>
+     </div>
+     <div class="col-lg-4 col-md-8">
+      <div class="card ">
+         <div class="card-body">
+           <img class="roomimage"  src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
+              
+           <div class="card-bottom">
+            <h3> Hotel Pradise  18515  </h3>
+            <p>Near B. B. Frontier Colony ,Ramgarh Modh, Jaipur</p>
+            <div class="d-flex flex-row justify-content-center">
+              <div class="p-2">
+                <a href="#">
+                   <i class="fa fa-car" aria-hidden="true">parking</i>
+                </a> 
+            </div>
+            <div class="p-2">
+              <a href="#">
+                <i class="fa fa-check-circle-o" aria-hidden="true">reception</i>
+              </a>
+            </div>
+            <div class="p-2">
+              <a href="#">
+                <i class="fa fa-wifi" aria-hidden="true">free wi-fi</i>
+              </a>
+            </div>
+            </div>
+         </div>
+
+          <!-- card bottom -->
+         <div class="d-flex flex-row justify-content-center ">
+          <div class="p-4">
+             <i class="fa fa-inr  text-danger" aria-hidden="true"><h4 class="text-danger">1199</h4></i>
+             
+          </div>
+            <div class="p-4 pl-2">
+              <i class="fa fa-inr" aria-hidden="true"><h4><del>1900</del></h4></i>
+            </div>
+            <div class="p-4 pl-2">
+              <h4 class="text-warning block">36%Off</h4>
+            </div>
+          </div>
+
+          <div class="d-flex flex-row justify-content-center">
+             <div class="p-2">
+              <a class="square_btn1">View Details </a>
+             </div>
+             <div class="p-2">
+              <a class="square_btn2"> Book Now</a>
+             </div>
+          </div>
+
+
+          </div>
+      </div>
+   </div>
+
+     </div>
+     </div>
+     </div>
+   
+
+
+
+     <div class="roomsContainer">
+      <div class=" container">
+       <div class="row"> 
+         <div class="col-lg-4 col-md-8">
+            <div class="card  ">
+               <div class="card-body">
+                 <img class="roomimage"  src="https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
+                     <div class="card-bottom">
+                      <h3> Hotel paradise 69758 </h3>
+                      <p> Near Disha School, Nirman Nagar 102, Jaipur</p>
+                      <div class="d-flex flex-row justify-content-center">
+                        <div class="p-2">
+                          <a href="#">
+                             <i class="fa fa-car" aria-hidden="true">parking</i>
+                          </a> 
+                      </div>
+                      <div class="p-2">
+                        <a href="#">
+                          <i class="fa fa-check-circle-o" aria-hidden="true">reception</i>
+                        </a>
+                      </div>
+                      <div class="p-2">
+                        <a href="#">
+                          <i class="fa fa-wifi" aria-hidden="true">free wi-fi</i>
+                        </a>
+                      </div>
+                      </div>
+  
+                      <!-- card bottom -->
+                      <div class="d-flex flex-row justify-content-center ">
+                        <div class="p-4">
+                           <i class="fa fa-inr  text-danger" aria-hidden="true"><h4 class="text-danger">799</h4></i>
+                           
+                        </div>
+                          <div class="p-4 pl-2">
+                            <i class="fa fa-inr" aria-hidden="true"><h4><del>999</del></h4></i>
+                          </div>
+                          <div class="p-4 pl-2">
+                            <h4 class="text-warning block">20%Off</h4>
+                          </div>
+                        </div>
+  
+                        <div class="d-flex flex-row justify-content-center">
+                           <div class="p-2">
+                            <a class="square_btn1">View Details </a>
+                           </div>
+                           <div class="p-2">
+                            <a class="square_btn2"> Book Now</a>
+                           </div>
+                        </div>
+  
+                   </div>
+                </div>
+            </div>
+         </div>
+  
+         <div class="col-lg-4 col-md-8">
+          <div class="card ">
+             <div class="card-body">
+              <img class="roomimage" src=" https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
+                 
+              <div class="card-bottom">
+                <h3> Hotel paradise 37375 </h3>
+                <p>Near Panchayati Dharamshal, Banipark ,Jaipur</p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-2">
+                    <a href="#">
+                       <i class="fa fa-car" aria-hidden="true">parking</i>
+                    </a> 
+                </div>
+                <div class="p-2">
+                  <a href="#">
+                    <i class="fa fa-check-circle-o" aria-hidden="true">reception</i>
+                  </a>
+                </div>
+                <div class="p-2">
+                  <a href="#">
+                    <i class="fa fa-wifi" aria-hidden="true">free wi-fi</i>
+                  </a>
+                </div>
+                </div>
+             </div>
+          
+                  <!--card bottom  -->
+             <div class="d-flex flex-row justify-content-center ">
+              <div class="p-4">
+                 <i class="fa fa-inr  text-danger" aria-hidden="true"><h4 class="text-danger">1000</h4></i>
+                 
+              </div>
+                <div class="p-4 pl-2">
+                  <i class="fa fa-inr" aria-hidden="true"><h4><del>1500</del></h4></i>
+                </div>
+                <div class="p-4 pl-2">
+                  <h4 class="text-warning block">33%Off</h4>
+                </div>
+              </div>
+  
+              <div class="d-flex flex-row justify-content-center">
+                 <div class="p-2">
+                  <a class="square_btn1">View Details </a>
+                 </div>
+                 <div class="p-2">
+                  <a class="square_btn2"> Book Now</a>
+                 </div>
+              </div>
+  
+               
+              </div>
+          </div>
+       </div>
+       <div class="col-lg-4 col-md-8">
+        <div class="card ">
+           <div class="card-body">
+             <img class="roomimage"  src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
+                
+             <div class="card-bottom">
+              <h3> Hotel Pradise  18515  </h3>
+              <p>Near B. B. Frontier Colony ,Ramgarh Modh, Jaipur</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-2">
+                  <a href="#">
+                     <i class="fa fa-car" aria-hidden="true">parking</i>
+                  </a> 
+              </div>
+              <div class="p-2">
+                <a href="#">
+                  <i class="fa fa-check-circle-o" aria-hidden="true">reception</i>
+                </a>
+              </div>
+              <div class="p-2">
+                <a href="#">
+                  <i class="fa fa-wifi" aria-hidden="true">free wi-fi</i>
+                </a>
+              </div>
+              </div>
+           </div>
+  
+            <!-- card bottom -->
+           <div class="d-flex flex-row justify-content-center ">
+            <div class="p-4">
+               <i class="fa fa-inr  text-danger" aria-hidden="true"><h4 class="text-danger">1199</h4></i>
+               
+            </div>
+              <div class="p-4 pl-2">
+                <i class="fa fa-inr" aria-hidden="true"><h4><del>1900</del></h4></i>
+              </div>
+              <div class="p-4 pl-2">
+                <h4 class="text-warning block">36%Off</h4>
+              </div>
+            </div>
+  
+            <div class="d-flex flex-row justify-content-center">
+               <div class="p-2">
+                <a class="square_btn1">View Details </a>
+               </div>
+               <div class="p-2">
+                <a class="square_btn2"> Book Now</a>
+               </div>
+            </div>
+  
+  
+            </div>
+        </div>
+     </div>
+  
+       </div>
+       </div>
+       </div>
+     
+<!-- ------------------- -->
+
+
+
+<div class="roomsContainer">
+  <div class=" container">
+   <div class="row"> 
+     <div class="col-lg-4 col-md-8">
+        <div class="card  ">
+           <div class="card-body">
+             <img class="roomimage"  src="https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
+                 <div class="card-bottom">
+                  <h3> Hotel paradise 69758 </h3>
+                  <p> Near Disha School, Nirman Nagar 102, Jaipur</p>
+                  <div class="d-flex flex-row justify-content-center">
+                    <div class="p-2">
+                      <a href="#">
+                         <i class="fa fa-car" aria-hidden="true">parking</i>
+                      </a> 
+                  </div>
+                  <div class="p-2">
+                    <a href="#">
+                      <i class="fa fa-check-circle-o" aria-hidden="true">reception</i>
+                    </a>
+                  </div>
+                  <div class="p-2">
+                    <a href="#">
+                      <i class="fa fa-wifi" aria-hidden="true">free wi-fi</i>
+                    </a>
+                  </div>
+                  </div>
+
+                  <!-- card bottom -->
+                  <div class="d-flex flex-row justify-content-center ">
+                    <div class="p-4">
+                       <i class="fa fa-inr  text-danger" aria-hidden="true"><h4 class="text-danger">799</h4></i>
+                       
+                    </div>
+                      <div class="p-4 pl-2">
+                        <i class="fa fa-inr" aria-hidden="true"><h4><del>999</del></h4></i>
+                      </div>
+                      <div class="p-4 pl-2">
+                        <h4 class="text-warning block">20%Off</h4>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-row justify-content-center">
+                       <div class="p-2">
+                        <a class="square_btn1">View Details </a>
+                       </div>
+                       <div class="p-2">
+                        <a class="square_btn2"> Book Now</a>
+                       </div>
+                    </div>
+
+               </div>
+            </div>
+        </div>
+     </div>
+
+     <div class="col-lg-4 col-md-8">
+      <div class="card ">
+         <div class="card-body">
+          <img class="roomimage" src=" https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
+             
+          <div class="card-bottom">
+            <h3> Hotel paradise 37375 </h3>
+            <p>Near Panchayati Dharamshal, Banipark ,Jaipur</p>
+            <div class="d-flex flex-row justify-content-center">
+              <div class="p-2">
+                <a href="#">
+                   <i class="fa fa-car" aria-hidden="true">parking</i>
+                </a> 
+            </div>
+            <div class="p-2">
+              <a href="#">
+                <i class="fa fa-check-circle-o" aria-hidden="true">reception</i>
+              </a>
+            </div>
+            <div class="p-2">
+              <a href="#">
+                <i class="fa fa-wifi" aria-hidden="true">free wi-fi</i>
+              </a>
+            </div>
+            </div>
+         </div>
+      
+              <!--card bottom  -->
+         <div class="d-flex flex-row justify-content-center ">
+          <div class="p-4">
+             <i class="fa fa-inr  text-danger" aria-hidden="true"><h4 class="text-danger">1000</h4></i>
+             
+          </div>
+            <div class="p-4 pl-2">
+              <i class="fa fa-inr" aria-hidden="true"><h4><del>1500</del></h4></i>
+            </div>
+            <div class="p-4 pl-2">
+              <h4 class="text-warning block">33%Off</h4>
+            </div>
+          </div>
+
+          <div class="d-flex flex-row justify-content-center">
+             <div class="p-2">
+              <a class="square_btn1">View Details </a>
+             </div>
+             <div class="p-2">
+              <a class="square_btn2"> Book Now</a>
+             </div>
+          </div>
+
+           
+          </div>
+      </div>
+   </div>
+   <div class="col-lg-4 col-md-8">
+    <div class="card ">
+       <div class="card-body">
+         <img class="roomimage"  src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
+            
+         <div class="card-bottom">
+          <h3> Hotel Pradise  18515  </h3>
+          <p>Near B. B. Frontier Colony ,Ramgarh Modh, Jaipur</p>
+          <div class="d-flex flex-row justify-content-center">
+            <div class="p-2">
+              <a href="#">
+                 <i class="fa fa-car" aria-hidden="true">parking</i>
+              </a> 
+          </div>
+          <div class="p-2">
+            <a href="#">
+              <i class="fa fa-check-circle-o" aria-hidden="true">reception</i>
+            </a>
+          </div>
+          <div class="p-2">
+            <a href="#">
+              <i class="fa fa-wifi" aria-hidden="true">free wi-fi</i>
+            </a>
+          </div>
+          </div>
+       </div>
+
+        <!-- card bottom -->
+       <div class="d-flex flex-row justify-content-center ">
+        <div class="p-4">
+           <i class="fa fa-inr  text-danger" aria-hidden="true"><h4 class="text-danger">1199</h4></i>
+           
+        </div>
+          <div class="p-4 pl-2">
+            <i class="fa fa-inr" aria-hidden="true"><h4><del>1900</del></h4></i>
+          </div>
+          <div class="p-4 pl-2">
+            <h4 class="text-warning block">36%Off</h4>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-center">
+           <div class="p-2">
+            <a class="square_btn1">View Details </a>
+           </div>
+           <div class="p-2">
+            <a class="square_btn2"> Book Now</a>
+           </div>
+        </div>
+
+
+        </div>
+    </div>
+ </div>
+
+   </div>
+   </div>
+   </div>
+ 
+
+
+
+<!-- --------------------------- -->
+
+     </div>
+ 
+     <!-- Optional JavaScript -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+     <script type="text/javascript" src="dist/js/propeller.min.js"></script>
+     <script type="text/javascript" language="javascript" src="datetimepicker/js/moment-with-locales.js"></script>
+
+     <script type="text/javascript" language="javascript" src="datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    </body>
+ </html>

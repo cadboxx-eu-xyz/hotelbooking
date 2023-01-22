@@ -1,0 +1,130 @@
+ 
+.bgImage{
+    width: 100%;
+    vertical-align: middle;
+    height: 590px;
+    filter: blur(8px);
+    -webkit-filter: blur(1px);
+    
+   }
+    .welocomeHead{
+    font-size: 4.5rem;
+    font-family: Aileron;
+  }
+   
+   .bgcontainer {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .content {
+      
+      color: #f1f1f1;
+      position: absolute;
+      padding: 20px;
+      top: 39%;
+  }
+   
+  
+  .square_btn {
+   display: inline-block;
+       /* padding: 0.3em 2em; */
+       text-decoration: none;
+       color: #67c5ff;
+       /* border: solid 2px #67c5ff; */
+       border-radius: 20px;
+       transition: .4s;
+       border: solid;
+  }
+  
+  .square_btn:hover {
+    background: #67c5ff;
+    color: white;
+  }
+  .square_btn1 {
+    display: inline-block; 
+        padding: 0.3em 2em; 
+        text-decoration: none; 
+        color: #67c5ff; 
+        border: solid 2px #66c5ff;
+        border-radius: 2px; 
+        transition: .4s; 
+   
+  }
+    
+  .square_btn1:hover {
+    background: #67c5ff;
+    color: white;
+  }
+  
+   
+   
+   .roomimage{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+   }
+   .row{
+    padding-top: 34px;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+     
+
+   }
+
+   .roomtext{
+    text-align: center;
+    padding-top: 36px;
+    font-family: serif;
+    text-decoration-line: underline;
+   }
+
+   .square_btn2 {
+    display: inline-block;
+    padding: 0.3em 2em;
+    text-decoration: none;
+    color: #18ad04;
+    border: solid 2px #18ad04;
+    border-radius: 3px;
+    transition: .4s;
+  }
+  
+  .square_btn2:hover {
+    background: #18ad04;
+    color: white;
+  }
+.roomsContainer{
+   padding-bottom: 60px;
+}
+ 
+.bookingInput{  
+padding: 25px;
+text-align: center;
+}
+.bookingDiv{
+  padding-top: 15px;
+   background-color: #FF9800;
+   padding-bottom: 17px;
+}
+.text-white{
+  text-align: center;
+}
+.background{
+   background-color: #235180;
+}
+.cardStyle:hover{
+  transform: scale(1.1);
+  
+}
+.input-height{
+  height: 66px;
+}
+.bg-brand{
+  background-color: #f9a01c;;
+  border-radius: 20px;
+    padding: 4px;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
